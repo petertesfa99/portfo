@@ -63,7 +63,7 @@ def submit_form():
           data = request.form.to_dict()
           write_to_csv(data) # this tels in which function we will write
           return redirect('thankyou.html')
-       except:
+        except:
     	  return 'did not save to database'
     else:
        return 'somthing is wrong, try again'
